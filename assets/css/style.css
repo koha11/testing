@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Karma", sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.row{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;   
+    float: left;
+}
+
+.row::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.flr{
+    float: right;
+}
+
+.flr::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.col{
+    padding-right: 8px;
+    padding-left: 8px;
+    float: left;
+}
+
+.col-third{
+    width: 33.33333%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-four{
+    width: 24.99999%;
+}
+
+.p16{
+    padding: 16px;
+}
+
+.p20{
+    padding: 20px;
+}
+
+.pb16-pt16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.large{
+    font-size: 18px;
+}
+
+.larger{
+    font-size: 24px;
+}
+
+.clear-a{
+    text-decoration: none;
+    color: #000;
+}
+
+#main{
+    /* height: 1000px;
+    width: 100%; */
+    margin-top: 100px !important;
+    padding: 8px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+/* phan header  */
+#header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#header > .header-title{
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+.header-title::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.header-title>li{
+    display: inline-block;
+}
+
+.menu-title{
+    float: left;
+}
+
+.menu-title:hover, .contact-title:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact-title{ 
+    float: right;
+    
+}
+
+/* Phan than  */
+#content{
+}
+
+.decription{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+        /* PHAN FOOD  */
+
+.food{
+}
+
+.food-items{
+}
+
+.food-container img{
+    width: 100%;
+}
+
+.food-container::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.food-title{
+    font-weight: 500;
+}
+     
+.food-decription{
+    opacity: 0.8;
+    font-weight: 100;
+}
+
+/* Phan food button  */
+.food-navi-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.food-navi-container a{
+    padding: 8px 16px;
+    display: block;
+}
+
+.food-navi-container a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.food-navi-container .first{
+    background-color: #000;
+}
+
+.food-navi-container .first:hover{
+    background-color: #ccc;
+}
+
+/* Phan about */
+.about-container{
+    padding: 32px 16px;
+}
+
+.about-content-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.about-break{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+}
+
+.about-image{
+    margin: auto;
+    max-width: 100%;
+}
+
+/* PHẦN FOOTER  */
+#footer{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer-title{
+    text-transform: uppercase;
+}
+
+.blog-items{
+   list-style: none;
+}
+
+.blog-items img{
+    width: 50px ;
+    float: left;
+    margin-right: 16px;
+
+}
+
+.blog-items p{
+}
+
+.tag-name{
+    background-color: #616161;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 12px;
+    margin-bottom: 16px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+/* PHAN MENU MODAL  */
+.menu-modal{
+   background-color: rgba(1, 1, 1, 0.3);
+   width: 100%;
+   height: 100%;
+   z-index: 2;
+   position: fixed;
+   left: 0;
+   top: 0;
+   display: none;
+}
+
+.menu-modal-container{
+    background-color: #616161;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 0 30px rgba(1, 1, 1, 0.5);
+    animation: FadeInX ease 0.5s;
+}
+
+.menu-items-container{
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+
+.menu-modal-title{
+    font-size: 30px;
+}
+
+.menu-items{
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+.menu-items:hover{
+    background-color: rgba(60, 59, 51, 0.8);
+
+}
+
+.close-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 49, 36, 0.8);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    opacity: 0.5;
+}
+
+.open{
+    display: unset;
+}
+
+@keyframes FadeInX{
+    from{
+        opacity: 0.3;
+        transform: translateX(-150px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes FadeOutX{
+    from{
+        transform: translateX(0) ;
+    }
+    to{
+        opacity: 0.3;
+        transform: translateX(-150px);
+    }
+
+}
+
+            /* PHẦN RESPONSIVE */
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    html{
+        font-size: 13px;
+    }
+
+    .large{
+        font-size: 14px;
+    }
+
+    .larger{
+        font-size: 16px;
+    }
+    
+    .tag-name{
+        font-size: 8px;
+    }
+
+    .menu-modal-container{
+        width: 60%;
+    }
+
+    .menu-modal-title{
+        font-size: 20px;
+    }
+    
+    .food-items{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .food-items{
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .food-items > img{
+        width: 40%;
+        float: left;
+    }
+
+    .food-title, .food-decription{
+        float: right;
+        width: 58%;
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px  */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    html{
+        font-size: 13px;
+    }
+
+    .large{
+        font-size: 16px;
+    }
+
+    .larger{
+        font-size: 20px;
+    }
+    
+    .tag-name{
+        font-size: 10px;
+    }
+
+    .menu-modal-title{
+        font-size: 25px;
+    }
+
+    .menu-modal-container{
+        width: 35%;
+    }
+} 
