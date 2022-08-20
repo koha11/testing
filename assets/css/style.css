@@ -87,13 +87,11 @@ html{
 }
 
 #main{
-    /* height: 1000px;
-    width: 100%; */
-    margin-top: 100px !important;
-    padding: 8px 16px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
+    background-image: url(/w3school-food/assets/img/Free\ Aesthetic\ iPhone\ Backgrounds\ &\ Widgets\ _\ Guitar\ &\ Lace.jpg);
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    position: absolute;
 }
 
 /* phan header  */
@@ -103,7 +101,7 @@ html{
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 5;
 }
 
 #header > .header-title{
@@ -139,6 +137,11 @@ html{
 
 /* Phan than  */
 #content{
+    margin-top: 100px !important;
+    padding: 8px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 
 .decription{
@@ -153,10 +156,14 @@ html{
 
         /* PHAN FOOD  */
 
+/* PAGE 1 */
+
 .food{
+    /* position: relative; */
 }
 
 .food-items{
+    /* background-image: url(/w3school-food/assets/img/Wallpaper\ coração.jpg); */
 }
 
 .food-container img{
@@ -178,6 +185,17 @@ html{
     font-weight: 100;
 }
 
+.page-one{
+    display: none;
+}
+
+/* PAGE 2 */
+.page-two{
+    /* position: absolute; */
+    z-index: 2;
+    display: none;
+}
+
 /* Phan food button  */
 .food-navi-container{
     padding-top: 32px;
@@ -197,12 +215,16 @@ html{
     color: #fff;
 }
 
-.food-navi-container .first{
+.food-navi-container .chosen-btn{
     background-color: #000;
+    color: #fff;
 }
 
-.food-navi-container .first:hover{
+.food-navi-container .chosen-btn:hover{
     background-color: #ccc;
+}
+
+.navi-food{
 }
 
 /* Phan about */
@@ -212,7 +234,7 @@ html{
 
 .about-content-container{
     padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-bottom: 32px; */
 }
 
 .about-break{
@@ -244,7 +266,6 @@ html{
     width: 50px ;
     float: left;
     margin-right: 16px;
-
 }
 
 .blog-items p{
@@ -261,12 +282,16 @@ html{
     display: inline-block;
 }
 
+.footer-container .first{
+    font-size: 15px;
+    background-color: #000;
+}
 /* PHAN MENU MODAL  */
 .menu-modal{
    background-color: rgba(1, 1, 1, 0.3);
    width: 100%;
    height: 100%;
-   z-index: 2;
+   z-index: 10;
    position: fixed;
    left: 0;
    top: 0;
@@ -279,12 +304,12 @@ html{
     height: 100%;
     box-shadow: 0 0 30px rgba(1, 1, 1, 0.5);
     animation: FadeInX ease 0.5s;
+    position: relative;
 }
 
 .menu-items-container{
     list-style: none;
-    position: relative;
-    height: 100%;
+    /* height: 3000px; */
 }
 
 .menu-modal-title{
@@ -300,6 +325,10 @@ html{
 .menu-items:hover{
     background-color: rgba(60, 59, 51, 0.8);
 
+}
+
+.menu-food{
+    display: block;
 }
 
 .close-btn{
@@ -362,6 +391,10 @@ html{
         font-size: 8px;
     }
 
+    .footer-container .first{
+        font-size: 10px;
+    }
+
     .menu-modal-container{
         width: 60%;
     }
@@ -390,6 +423,26 @@ html{
         float: right;
         width: 58%;
     }
+
+   .footer-container{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+   }
+
+   .footer-container .footer-title{
+        text-align: center;
+   }
+
+   .footer-container .footer{
+        text-align: right;
+        margin-top: 15px;
+        margin-bottom: 15px;
+   }
+
+   .tag-container{
+    margin-top: 15px;
+   }
 }
 
 /* Tablet: width >= 740px and width < 1024px  */
@@ -410,6 +463,10 @@ html{
         font-size: 10px;
     }
 
+    .footer-container .first{
+        font-size: 13px;
+    }
+
     .menu-modal-title{
         font-size: 25px;
     }
@@ -417,4 +474,5 @@ html{
     .menu-modal-container{
         width: 35%;
     }
+
 } 
